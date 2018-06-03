@@ -18,8 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8n-Tm-FNh">
+                                <rect key="frame" x="67" y="434" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMX-wA-VdM">
+                                <rect key="frame" x="132" y="345" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="删除本地缓存"/>
+                                <connections>
+                                    <action selector="clearCache:" destination="9pv-A4-QxB" eventType="touchUpInside" id="SeT-2K-xl9"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pw4-aR-P9h">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="67" y="163" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -31,6 +43,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="服务器" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="imageView" destination="f8n-Tm-FNh" id="1T2-Je-oIN"/>
                         <outlet property="textView" destination="pw4-aR-P9h" id="43L-X9-ph2"/>
                     </connections>
                 </viewController>
@@ -60,6 +73,14 @@
                                 <state key="normal" title="发送消息"/>
                                 <connections>
                                     <action selector="sendMsg:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Jdx-QR-MGR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vz-Vs-3gA">
+                                <rect key="frame" x="156" y="270" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="发送文件"/>
+                                <connections>
+                                    <action selector="sendImg:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UHk-w4-IoJ"/>
                                 </connections>
                             </button>
                         </subviews>

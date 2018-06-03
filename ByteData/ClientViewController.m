@@ -49,6 +49,10 @@
     [self sendMessage];
 }
 
+-(IBAction)sendImg:(id)sender{
+    [self sendImage];
+}
+
 #pragma mark - method
 //发送自定义消息
 -(void)sendMessage{
@@ -67,10 +71,32 @@
     NSData* lengthData = [NSData dataWithBytes:&bodyLength length:4];
     [mutData appendData:lengthData];
     
-    //    再将文字或者图片追加上
+    //    再将文字追加上
     [mutData appendData:data];
     
     [self.clientSocket writeData:mutData withTimeout:-1 tag:333];
+}
+
+-(void)sendImage{
+    
+    NSString* url = [[NSBundle mainBundle] pathForResource:@"xcm" ofType:@"jpeg"];
+    NSData* data = [NSData dataWithContentsOfFile:url];
+    NSInteger type = 102;
+    
+    NSMutableData* mutData = [NSMutableData data];
+    //    1~4字节表示类型
+    NSData* typeData = [NSData dataWithBytes:&type length:4]; //sizeof(type)
+    [mutData appendData:typeData];
+    
+    //    5~8字节表示数据总长度
+    NSInteger bodyLength = data.length + 4 + 4;
+    NSData* lengthData = [NSData dataWithBytes:&bodyLength length:4];
+    [mutData appendData:lengthData];
+    
+    //    再将图片追加上
+    [mutData appendData:data];
+    
+    [self.clientSocket writeData:mutData withTimeout:-1 tag:0];
 }
 
 #pragma mark - AsyncSocketDelegate

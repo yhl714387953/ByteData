@@ -16,6 +16,7 @@
 		ABC044CF20C414AC00C9A897 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044CE20C414AC00C9A897 /* ClientViewController.m */; };
 		ABC044D520C4161500C9A897 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044D120C4161500C9A897 /* AsyncUdpSocket.m */; };
 		ABC044D620C4161500C9A897 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044D320C4161500C9A897 /* AsyncSocket.m */; };
+		ABC044D820C41EB500C9A897 /* xcm.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ABC044D720C41EB500C9A897 /* xcm.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ABC044D220C4161500C9A897 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
 		ABC044D320C4161500C9A897 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
 		ABC044D420C4161500C9A897 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		ABC044D720C41EB500C9A897 /* xcm.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xcm.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				ABC044CB20C4149900C9A897 /* ServerViewController.m */,
 				ABC044CD20C414AC00C9A897 /* ClientViewController.h */,
 				ABC044CE20C414AC00C9A897 /* ClientViewController.m */,
+				ABC044D720C41EB500C9A897 /* xcm.jpeg */,
 				ABC044D020C4161500C9A897 /* Socket */,
 				ABC044BA20C4132700C9A897 /* Main.storyboard */,
 				ABC044BD20C4132900C9A897 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC044D820C41EB500C9A897 /* xcm.jpeg in Resources */,
 				ABC044C120C4132900C9A897 /* LaunchScreen.storyboard in Resources */,
 				ABC044BE20C4132900C9A897 /* Assets.xcassets in Resources */,
 				ABC044BC20C4132700C9A897 /* Main.storyboard in Resources */,

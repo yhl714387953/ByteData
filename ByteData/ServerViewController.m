@@ -44,6 +44,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark
+-(IBAction)clearCache:(id)sender{
+
+    self.imageView.image = nil;
+    self.textView.text = @"";
+}
+
 #pragma mark - method
 -(void)openPort{
     
@@ -81,6 +88,8 @@
  文件过大时，会分段传输，当本次传输数据的长度小于总长度的时候需要累加
  大文件的时候，禁止在内存中堆放，避免内存占用过大
  
+ 目前处理的是一次接受完的是文字，文件大的分几次接受完成的是图片
+ 
  */
 -(void)onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
     
@@ -90,7 +99,8 @@
     NSInteger currentWriteLength = 0;
     if (_isHeader == NO) {
         _isHeader = YES;
-        [self deleteFile];
+        
+        [self deleteFile];//清下本地缓存
         
         //    1~4字节表示类型
         NSInteger type = 0;//一定要给初始值，否则得出的结果是错误的
@@ -108,11 +118,20 @@
             NSLog(@"接收到的消息为：%@", str);
             _isHeader = NO;
             self.textView.text = [self.textView.text stringByAppendingFormat:@"\n%@", str];
-        }else if (type == 1002){//图片
+        }else if (type == 102){//图片
             
         }
         
-        [self writeToCacheData:msgData tag:tag];
+        currentWriteLength = [self writeToCacheData:msgData tag:tag];
+        if (currentWriteLength == _fileLength - 8) {
+            
+            [self sendMsgSock:sock];
+            
+            NSString* filePath = [self imagePathTag:tag];
+            UIImage* image = [UIImage imageWithContentsOfFile:filePath];
+            self.imageView.image = image;
+            _isHeader = NO;
+        }
     }else{
         currentWriteLength = [self writeToCacheData:data tag:tag];
         if (currentWriteLength == _fileLength - 8) {
