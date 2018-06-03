@@ -8,27 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		ABC044B320C4132700C9A897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044B220C4132700C9A897 /* AppDelegate.m */; };
-		ABC044B620C4132700C9A897 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044B520C4132700C9A897 /* FirstViewController.m */; };
-		ABC044B920C4132700C9A897 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044B820C4132700C9A897 /* SecondViewController.m */; };
 		ABC044BC20C4132700C9A897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC044BA20C4132700C9A897 /* Main.storyboard */; };
 		ABC044BE20C4132900C9A897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC044BD20C4132900C9A897 /* Assets.xcassets */; };
 		ABC044C120C4132900C9A897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC044BF20C4132900C9A897 /* LaunchScreen.storyboard */; };
 		ABC044C420C4132900C9A897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044C320C4132900C9A897 /* main.m */; };
+		ABC044CC20C4149900C9A897 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044CB20C4149900C9A897 /* ServerViewController.m */; };
+		ABC044CF20C414AC00C9A897 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044CE20C414AC00C9A897 /* ClientViewController.m */; };
+		ABC044D520C4161500C9A897 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044D120C4161500C9A897 /* AsyncUdpSocket.m */; };
+		ABC044D620C4161500C9A897 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC044D320C4161500C9A897 /* AsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABC044AE20C4132700C9A897 /* ByteData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC044B120C4132700C9A897 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABC044B220C4132700C9A897 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ABC044B420C4132700C9A897 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		ABC044B520C4132700C9A897 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		ABC044B720C4132700C9A897 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		ABC044B820C4132700C9A897 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		ABC044BB20C4132700C9A897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABC044BD20C4132900C9A897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC044C020C4132900C9A897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC044C220C4132900C9A897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC044C320C4132900C9A897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABC044CA20C4149900C9A897 /* ServerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		ABC044CB20C4149900C9A897 /* ServerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
+		ABC044CD20C414AC00C9A897 /* ClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
+		ABC044CE20C414AC00C9A897 /* ClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
+		ABC044D120C4161500C9A897 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		ABC044D220C4161500C9A897 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		ABC044D320C4161500C9A897 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		ABC044D420C4161500C9A897 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +69,11 @@
 			children = (
 				ABC044B120C4132700C9A897 /* AppDelegate.h */,
 				ABC044B220C4132700C9A897 /* AppDelegate.m */,
-				ABC044B420C4132700C9A897 /* FirstViewController.h */,
-				ABC044B520C4132700C9A897 /* FirstViewController.m */,
-				ABC044B720C4132700C9A897 /* SecondViewController.h */,
-				ABC044B820C4132700C9A897 /* SecondViewController.m */,
+				ABC044CA20C4149900C9A897 /* ServerViewController.h */,
+				ABC044CB20C4149900C9A897 /* ServerViewController.m */,
+				ABC044CD20C414AC00C9A897 /* ClientViewController.h */,
+				ABC044CE20C414AC00C9A897 /* ClientViewController.m */,
+				ABC044D020C4161500C9A897 /* Socket */,
 				ABC044BA20C4132700C9A897 /* Main.storyboard */,
 				ABC044BD20C4132900C9A897 /* Assets.xcassets */,
 				ABC044BF20C4132900C9A897 /* LaunchScreen.storyboard */,
@@ -74,6 +81,17 @@
 				ABC044C320C4132900C9A897 /* main.m */,
 			);
 			path = ByteData;
+			sourceTree = "<group>";
+		};
+		ABC044D020C4161500C9A897 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				ABC044D120C4161500C9A897 /* AsyncUdpSocket.m */,
+				ABC044D220C4161500C9A897 /* AsyncSocket.h */,
+				ABC044D320C4161500C9A897 /* AsyncSocket.m */,
+				ABC044D420C4161500C9A897 /* AsyncUdpSocket.h */,
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC044B920C4132700C9A897 /* SecondViewController.m in Sources */,
+				ABC044CC20C4149900C9A897 /* ServerViewController.m in Sources */,
+				ABC044D520C4161500C9A897 /* AsyncUdpSocket.m in Sources */,
 				ABC044B320C4132700C9A897 /* AppDelegate.m in Sources */,
+				ABC044D620C4161500C9A897 /* AsyncSocket.m in Sources */,
 				ABC044C420C4132900C9A897 /* main.m in Sources */,
-				ABC044B620C4132700C9A897 /* FirstViewController.m in Sources */,
+				ABC044CF20C414AC00C9A897 /* ClientViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

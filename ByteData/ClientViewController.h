@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ClientViewController.h
 //  ByteData
 //
 //  Created by L's on 2018/6/3.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface ClientViewController : UIViewController
 
 @end
-
