@@ -201,6 +201,6 @@ iOS跟Java后台传输数据的时候经常有个问题，那就是数据经常�
 
 ---
 感谢您阅读完毕，如有疑问，欢迎添加QQ:714387953(蜗牛上高速)。
-[github:https://github.com/yhl714387953/Socket局域网通信Demo](github:https://github.com/yhl714387953/Socket局域网通信Demo)
+[https://github.com/yhl714387953/ByteData](https://github.com/yhl714387953/ByteData)
 如果有错误，欢迎指正，一起切磋，共同进步
 如果喜欢可以Follow、Star、Fork，都是给我最大的鼓励。
